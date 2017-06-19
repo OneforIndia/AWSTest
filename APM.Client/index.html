@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="utf-8" />
+	<title>SMS Dashboard</title>
+
+	<!-- style sheets -->
+	<link href="Content/bootstrap.css" rel="stylesheet" />
+</head>
+
+<body ng-app="productManagement">
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<div class="navbar-brand">SMS Dashboard</div>
+			</div>
+		</div>
+	</nav>
+
+	<div class="container">
+		<div ng-include="'app/products/S3List.html'"></div>
+	</div>
+	
+
+	<!-- library scripts -->
+	<script src="Scripts/angular.js"></script>
+	<script src="Scripts/angular-resource.min.js"></script>
+
+	<!-- application script -->
+	<script src="app/app.js"></script>
+
+	<!-- services -->
+	<script src="common/common.services.js"></script>
+	<script src="common/productResource.js"></script>
+
+	<!-- product controllers -->
+	<script src="app/products/productListCtrl.js"></script>
+</body>
+</html>
